@@ -28,7 +28,7 @@ namespace Server2
             client.MessageReceived += CommandsHandler;
             client.Log += Log;
 
-            var token = "ODc5MjMwNzU2NzI2MTQ1MDQ3.YSMtcw.HZ4ObJDoYlak-fdEwSzv0oCOvO0";
+            var token = "";
 
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
